@@ -55,7 +55,7 @@ function Certifications() {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold flex gap-5 items-center">
+              <h6 className="mb-2 font-semibold flex justify-between items-center">
               <motion.a
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}

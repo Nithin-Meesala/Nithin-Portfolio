@@ -1,6 +1,9 @@
 import { EXPERIENCES } from '@/constants'
 import React from 'react';
 import { motion } from "framer-motion";
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 
 function Experience() {
@@ -24,6 +27,8 @@ function Experience() {
                     whileInView={{x:0,opacity:1}}
                     initial={{x:-100,opacity:0}}
                     transition={{duration:1}}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                     
                     src={experience.image} alt="expreince company image" height={200} width={200} />
                     </div>
@@ -32,7 +37,7 @@ function Experience() {
                     initial={{x:100,opacity:0}}
                     transition={{duration:1}}
                     className="w-full max-w-xl lg:w-3/4">
-                    <h6 className='mb-2 font-semibold'>{experience.role} - <span className='text-sm text-purple-100'>{experience.company}</span></h6>
+                    <h6 className='mb-2 font-semibold flex'>{experience.role} - <span className='text-sm text-purple-100'>{experience.company}</span></h6>
                     <p className='mb-4 text-neutral-400'>{experience.description}</p>
                     {experience.technologies.map((technology,index)=>(
                        

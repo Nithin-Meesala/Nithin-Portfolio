@@ -38,7 +38,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "Python", "Machine Learning", "Flask"],
     link:"https://github.com/Nithin-Meesala/Diabetes-Pediction-model-Using-Machine-Learning-Algorithm",
   },
-  {
+  { 
     title: "AI Resume Builder",
     image: project2,
     description:

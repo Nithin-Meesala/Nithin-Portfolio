@@ -31,15 +31,22 @@ function Projects() {
                     whileInView={{x:0,opacity:1}}
                     initial={{opacity:0, x:-100}}
                     transition={{duration:1}}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                     className='w-full lg:w-1/4'>
-                    <img src={project.image} alt={project.title} width={350} height={350}  className='mb-6 rounded'/>
+                    <a href={project.link}><img src={project.image} alt={project.title} width={350} height={350}  className='mb-6 rounded'/></a>
                 </motion.div>
                 <motion.div 
                 whileInView={{x:0 , opacity:1}}
                 initial={{x:100,opacity:0}}
                 transition={{duration:1}}
                 className='w-full max-w-xl lg:w-3/4'>
-                    <h6 className='mb-2 font-semibold flex gap-2 items-center' >{project.title}
+                    <h6 className='mb-2 font-semibold flex gap-8 justify-between items-center' >
+                      <motion.a
+                      transition={{duration:1}}
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.90 }}
+                      href={project.link}>{project.title}</motion.a>
                     <Typography
                   aria-owns={open ? "mouse-over-popover" : undefined}
                   aria-haspopup="true"

@@ -120,13 +120,13 @@ function Contact() {
         whileInView={{opacity:1,y:0}}
         initial={{opacity:0, y:-100}}
         transition={{duration:0.5}}
-        className='my-10 text-center text-4xl'>Get in Touch</motion.h2>
+        className='my-8 text-center text-4xl'>Get in Touch</motion.h2>
         <div className='text-center tracking-tighter'>
         <motion.button 
         whileInView={{ y:0,opacity:1}}
         initial={{y:200,opacity:0}}
         transition={{duration:1}}
-        onClick={() => setOpen(true)} className="bg-red-500 text-black text-xl p-2 hover:bg-white/80 rounded">Send a Message</motion.button>
+        onClick={() => setOpen(true)} className="bg-red-800 text-black text-xl p-2 hover:bg-red-600 rounded animate-bounce duration-500">Send a Message</motion.button>
             <motion.p
             whileInView={{x:0,opacity:1}}
             initial={{opacity:0, x:-100}}

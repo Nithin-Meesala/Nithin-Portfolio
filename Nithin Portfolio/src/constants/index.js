@@ -4,6 +4,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project5.png";
 import certificate1 from "../assets/Certifications/certificate1.png"
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -79,6 +80,14 @@ export const PROJECTS = [
     technologies: ["Java", "Eclipse", "mySQL", "HTML", "CSS"],
     link:"https://github.com/Nithin-Meesala/Sec-Health-BlockChain-based-Protocol-for-securing-health-records",
   },
+  {
+    title: "Result Management System",
+    image: project5,
+    description:
+      "Developed a comprehensive Result Management System using modern web technologies like HTML, CSS, JavaScript, Node.js, Express.js, EJS, and Mongoose. This system streamlines the process of managing and accessing academic results for both students and staff, ensuring a user-friendly and efficient experience.",
+    technologies: ["HTML", "CSS", "EJS", "Node.js", "Express","JavaScript"],
+    link:"https://github.com/Nithin-Meesala/Student-Result-Management-System",
+  }
 ];
 
 export const CERTIFICATIONS= [

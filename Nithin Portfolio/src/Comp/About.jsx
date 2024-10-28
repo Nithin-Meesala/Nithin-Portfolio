@@ -11,7 +11,7 @@ function About() {
       </h2>
       <div className="flex flex-wrap justify-center">
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 p-4 lg:p-8 flex justify-center">
+        {/* <div className="w-full lg:w-1/2 p-4 lg:p-8 flex justify-center">
           <motion.img
             whileInView={{ opacity: 1, y: 0, x: 0 }}
             initial={{ opacity: 0, y: -100, x: -200 }}
@@ -20,7 +20,7 @@ function About() {
             alt="about image"
             className="rounded-xl h-[250px] w-[200px] sm:h-[300px] sm:w-[250px] lg:h-[400px] lg:w-[350px]" // Responsive height and width
           />
-        </div>
+        </div> */}
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 p-4 lg:p-8 flex justify-center lg:justify-start">

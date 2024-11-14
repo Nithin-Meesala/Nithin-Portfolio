@@ -8,6 +8,7 @@ import Header from "./Comp/Header";
 import Hero from "./Comp/Hero";
 import Projects from "./Comp/Projects";
 import Technologies from "./Comp/Technologies";
+import ThreeScene from "./Comp/ThreeScene";
 
 function App() {
   const contactRef = useRef(null);
@@ -18,10 +19,15 @@ function App() {
   };
 
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+    <div className="overflow-x-hidden text-neutral-300 antialiased selection:touch-none selection:text-cyan-900">
+      <ThreeScene/>
       <div className="fixed top-0 -z-10 h-full w-full">
+      
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+        
       </div>
+      
+      
       {/* Apply responsive padding: px-8 on small screens, px-20 on medium and larger */}
       <div className="container mx-auto px-8 md:px-20">
         <Header scrollToContact={scrollToContact} />

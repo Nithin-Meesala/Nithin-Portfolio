@@ -33,7 +33,7 @@ const ThreeScene = () => {
     }
     
     geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
-    const particlesMaterial = new THREE.PointsMaterial({ color: 0xff44ff, size: 2 });
+    const particlesMaterial = new THREE.PointsMaterial({ color: 0x0011ff, size: 2 });
     const particles = new THREE.Points(geometry, particlesMaterial);
     
     const renderingParent = new THREE.Group();
